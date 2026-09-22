@@ -1,0 +1,13 @@
+# N-Central exports and rotation outputs — contain real customer names and live/old credentials
+*.csv
+*.xlsx
+*.xls
+
+# Vendor API specs — not ours to redistribute, and some are large
+*Swagger*.json
+*Swagger*.yaml
+*swagger*.json
+*swagger*.yaml
+
+# OS cruft
+.DS_Store
