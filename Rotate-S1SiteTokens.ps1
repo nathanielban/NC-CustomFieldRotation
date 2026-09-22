@@ -2,7 +2,7 @@
 # Rotates SentinelOne site registration tokens and outputs an updated CSV for N-Central re-import.
 #
 # Usage:
-#   ./Rotate-S1SiteTokens.ps1 -ApiUrl "https://usea1-swprd2.sentinelone.net" -ApiToken "your-api-token" -InputCsv "ncentralexport.csv"
+#   ./Rotate-S1SiteTokens.ps1 -ApiUrl "https://yours1dashboard.sentinelone.net" -ApiToken "your-api-token" -InputCsv "ncentralexport.csv"
 #   ./Rotate-S1SiteTokens.ps1 ... -DryRun    # preview matches without rotating anything
 #
 # Auth flow (per Swagger spec):
@@ -26,7 +26,7 @@
 
 param(
     [Parameter(Mandatory=$true)]
-    [string]$ApiUrl,        # e.g. https://usea1-swprd2.sentinelone.net
+    [string]$ApiUrl,        # e.g. https://yours1dashboard.sentinelone.net
 
     [Parameter(Mandatory=$true)]
     [string]$ApiToken,      # SentinelOne API token from Settings > Users > API Token

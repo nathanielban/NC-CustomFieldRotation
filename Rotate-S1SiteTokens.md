@@ -22,7 +22,7 @@ Bulk export and import of the custom property is done with the
 
 ```powershell
 ./Rotate-S1SiteTokens.ps1 `
-    -ApiUrl   "https://usea1-swprd2.sentinelone.net" `
+    -ApiUrl   "https://yours1dashboard.sentinelone.net" `
     -ApiToken "<sentinelone-api-token>" `
     -InputCsv "workflow-results-filtered.csv"
 ```
@@ -37,7 +37,7 @@ Preview matches without rotating anything:
 
 | Parameter | Required | Description |
 |---|---|---|
-| `-ApiUrl` | Yes | Your SentinelOne management console URL, e.g. `https://usea1-swprd2.sentinelone.net`. A trailing `/` is ignored. |
+| `-ApiUrl` | Yes | Your SentinelOne management console URL, e.g. `https://yours1dashboard.sentinelone.net`. A trailing `/` is ignored. |
 | `-ApiToken` | Yes | SentinelOne API token (Settings > Users > API Token). |
 | `-InputCsv` | Yes | Path to the CPT export, `workflow-results-filtered.csv`. |
 | `-OutputCsv` | No | Output path. Defaults to `s1-token-rotation-<yyyyMMdd-HHmmss>.csv` in the current directory. |
